@@ -1,0 +1,37 @@
+{
+    "_id": "185f2ce8-005a-4e4d-bb18-58c8c6a1a36d",
+    "colName": "Auth",
+    "created": "2023-07-10T19:05:08.922Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7c9a751a-ca26-4978-b0e5-6a1d1a243352",
+            "colId": "185f2ce8-005a-4e4d-bb18-58c8c6a1a36d",
+            "containerId": "",
+            "name": "Sign in",
+            "url": "{{apiUrl}}/auth/sign-in",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-10T19:05:12.920Z",
+            "modified": "2023-07-10T19:40:11.133Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
