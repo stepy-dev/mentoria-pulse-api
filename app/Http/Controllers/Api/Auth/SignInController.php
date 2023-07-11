@@ -10,6 +10,9 @@ use Illuminate\Validation\ValidationException;
 
 class SignInController extends Controller
 {
+    /**
+     * Handle the incoming request.
+     */
     public function __invoke(SignInRequest $request)
     {
         $validatedData = $request->validated();

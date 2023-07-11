@@ -18,7 +18,11 @@ Route::group(['prefix' => 'auth'], function() {
 });
 
 Route::group(['prefix' => 'projects', 'middleware' => ['auth:sanctum']], function() {
-    Route::get('/', function() {
-        return ['projects' => []];
-    });
+    Route::get('/', [\App\Http\Controllers\Api\Projects\GetController::class, '__invoke'])->name('api.projects.get');
+    Route::get('/{projectUuid}', [\App\Http\Controllers\Api\Projects\ShowController::class, '__invoke'])->name('api.projects.show');
+});
+
+Route::group(['prefix' => 'projects/{projectUuid}/resources', 'middleware' => ['auth:sanctum']], function() {
+    Route::get('/', [\App\Http\Controllers\Api\ProjectResources\GetController::class, '__invoke'])->name('api.project_resources.get');
+    Route::get('/{resourceUuid}', [\App\Http\Controllers\Api\ProjectResources\ShowController::class, '__invoke'])->name('api.project_resources.show');
 });
