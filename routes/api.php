@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'auth'], function() {
+    Route::post('/sign-in', [\App\Http\Controllers\Api\Auth\SignInController::class, '__invoke'])->name('api.auth.sign-in');
+});
+
+Route::group(['prefix' => 'projects', 'middleware' => ['auth:sanctum']], function() {
+    Route::get('/', function() {
+        return ['projects' => []];
+    });
 });
