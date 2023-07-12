@@ -37,11 +37,11 @@
             "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
             "containerId": "",
             "name": "Get project",
-            "url": "{{apiUrl}}/projects/a2f6546f-4f41-35d1-88b8-9f802791d745",
+            "url": "{{apiUrl}}/projects/896c40cb-4693-33bf-8291-8bbae10387ba",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-07-11T18:43:38.895Z",
-            "modified": "2023-07-11T18:44:02.788Z",
+            "modified": "2023-07-12T17:03:22.953Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -69,6 +69,38 @@
             "sortNum": 30000,
             "created": "2023-07-12T16:49:39.177Z",
             "modified": "2023-07-12T16:52:23.386Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Test\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{apiToken}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb817936-295e-4b95-a51a-29bf823437b9",
+            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "containerId": "",
+            "name": "Update project",
+            "url": "{{apiUrl}}/projects/896c40cb-4693-33bf-8291-8bbae10387ba",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-07-12T17:03:44.911Z",
+            "modified": "2023-07-12T17:12:01.347Z",
             "headers": [
                 {
                     "name": "Accept",

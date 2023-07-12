@@ -21,6 +21,7 @@ Route::group(['prefix' => 'projects', 'middleware' => ['auth:sanctum']], functio
     Route::get('/', [\App\Http\Controllers\Api\Projects\GetController::class, '__invoke'])->name('api.projects.get');
     Route::post('/', [\App\Http\Controllers\Api\Projects\PostController::class, '__invoke'])->name('api.projects.post');
     Route::get('/{projectUuid}', [\App\Http\Controllers\Api\Projects\ShowController::class, '__invoke'])->name('api.projects.show');
+    Route::put('/{projectUuid}', [\App\Http\Controllers\Api\Projects\UpdateController::class, '__invoke'])->name('api.projects.update');
 });
 
 Route::group(['prefix' => 'projects/{projectUuid}/resources', 'middleware' => ['auth:sanctum']], function() {
