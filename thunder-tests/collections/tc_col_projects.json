@@ -58,6 +58,38 @@
                 "bearer": "{{apiToken}}"
             },
             "tests": []
+        },
+        {
+            "_id": "2fc1bf36-799f-4881-8c43-a25919141006",
+            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "containerId": "",
+            "name": "Create project",
+            "url": "{{apiUrl}}/projects",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-12T16:49:39.177Z",
+            "modified": "2023-07-12T16:52:23.386Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Test\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{apiToken}}"
+            },
+            "tests": []
         }
     ]
 }

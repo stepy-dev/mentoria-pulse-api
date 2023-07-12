@@ -19,6 +19,7 @@ Route::group(['prefix' => 'auth'], function() {
 
 Route::group(['prefix' => 'projects', 'middleware' => ['auth:sanctum']], function() {
     Route::get('/', [\App\Http\Controllers\Api\Projects\GetController::class, '__invoke'])->name('api.projects.get');
+    Route::post('/', [\App\Http\Controllers\Api\Projects\PostController::class, '__invoke'])->name('api.projects.post');
     Route::get('/{projectUuid}', [\App\Http\Controllers\Api\Projects\ShowController::class, '__invoke'])->name('api.projects.show');
 });
 
