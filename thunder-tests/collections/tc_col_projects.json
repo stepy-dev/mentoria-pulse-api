@@ -122,6 +122,33 @@
                 "bearer": "{{apiToken}}"
             },
             "tests": []
+        },
+        {
+            "_id": "d04cecf9-5db8-4007-9b0d-c906d2dccfee",
+            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "containerId": "",
+            "name": "Delete project",
+            "url": "{{apiUrl}}/projects/a7a0276f-2618-4e27-a7c6-5d514578aaa3",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-12T17:13:32.321Z",
+            "modified": "2023-07-12T17:17:50.492Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{apiToken}}"
+            },
+            "tests": []
         }
     ]
 }

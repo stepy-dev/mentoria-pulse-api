@@ -22,6 +22,7 @@ Route::group(['prefix' => 'projects', 'middleware' => ['auth:sanctum']], functio
     Route::post('/', [\App\Http\Controllers\Api\Projects\PostController::class, '__invoke'])->name('api.projects.post');
     Route::get('/{projectUuid}', [\App\Http\Controllers\Api\Projects\ShowController::class, '__invoke'])->name('api.projects.show');
     Route::put('/{projectUuid}', [\App\Http\Controllers\Api\Projects\UpdateController::class, '__invoke'])->name('api.projects.update');
+    Route::delete('/{projectUuid}', [\App\Http\Controllers\Api\Projects\DeleteController::class, '__invoke'])->name('api.projects.delete');
 });
 
 Route::group(['prefix' => 'projects/{projectUuid}/resources', 'middleware' => ['auth:sanctum']], function() {
