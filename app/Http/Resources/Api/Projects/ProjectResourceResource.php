@@ -18,6 +18,8 @@ class ProjectResourceResource extends JsonResource
             'id' => $this->uuid,
             'type_name' => $this->type_name,
             'name' => $this->name,
+            'method' => $this->method,
+            'endpoint' => $this->endpoint,
             'uptime' => $this->uptime,
             'settings' => $this->settings,
             'checked_at' => $this->checked_at,

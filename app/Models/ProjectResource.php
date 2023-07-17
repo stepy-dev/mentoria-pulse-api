@@ -22,6 +22,8 @@ class ProjectResource extends Model
         'project_id',
         'type_id',
         'name',
+        'method',
+        'endpoint',
         'uptime',
         'settings',
     ];
@@ -43,6 +45,7 @@ class ProjectResource extends Model
      * @var array
      */
     protected $attributes = [
+        'method' => 'GET',
         'uptime' => 100,
         'settings' => '[]',
     ];

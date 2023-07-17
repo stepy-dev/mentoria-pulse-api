@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreignId('project_id')->constrained()->onDelete('cascade');
             $table->smallInteger('type_id');
             $table->string('name');
+            $table->string('method', 10);
+            $table->string('endpoint');
             $table->decimal('uptime');
             $table->json('settings');
             $table->timestamp('checked_at')->nullable();
