@@ -1,20 +1,20 @@
 {
-    "_id": "369b1a4c-0e47-46a2-8d83-c703221992a4",
-    "colName": "Projects",
-    "created": "2023-07-10T19:42:05.416Z",
-    "sortNum": 20000,
+    "_id": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
+    "colName": "Project Resources",
+    "created": "2023-07-11T18:55:20.779Z",
+    "sortNum": 30000,
     "folders": [],
     "requests": [
         {
-            "_id": "5aceb26e-78ed-4551-a9ae-fe586248045f",
-            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "_id": "1378aee4-af74-45fa-8c31-e1fc0d319184",
+            "colId": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
             "containerId": "",
             "name": "Get all",
-            "url": "{{apiUrl}}/projects",
+            "url": "{{apiUrl}}/projects/100dbdc0-7405-3e41-8b03-6e6d72400046/resources",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2023-07-10T19:42:11.136Z",
-            "modified": "2023-07-11T06:29:17.977Z",
+            "created": "2023-07-11T18:55:20.781Z",
+            "modified": "2023-07-17T18:18:32.079Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -33,15 +33,15 @@
             "tests": []
         },
         {
-            "_id": "96d82e5e-a227-47df-9132-4616d053b321",
-            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "_id": "b9b479fa-6920-438a-a0dc-8f49d3208907",
+            "colId": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
             "containerId": "",
-            "name": "Get project",
-            "url": "{{apiUrl}}/projects/21f0a605-4f34-4c91-a553-55c1526bac5a",
+            "name": "Get resource",
+            "url": "{{apiUrl}}/projects/21f0a605-4f34-4c91-a553-55c1526bac5a/resources/8bfc4a9d-5fc8-4190-9dec-b74956de0354",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2023-07-11T18:43:38.895Z",
-            "modified": "2023-07-17T17:28:43.776Z",
+            "created": "2023-07-11T18:55:20.782Z",
+            "modified": "2023-07-17T18:08:57.675Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -60,15 +60,15 @@
             "tests": []
         },
         {
-            "_id": "2fc1bf36-799f-4881-8c43-a25919141006",
-            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "_id": "19e58c81-9101-40b7-8704-815c67d5dd57",
+            "colId": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
             "containerId": "",
-            "name": "Create project",
-            "url": "{{apiUrl}}/projects",
+            "name": "Create resource",
+            "url": "{{apiUrl}}/projects/100dbdc0-7405-3e41-8b03-6e6d72400046/resources",
             "method": "POST",
             "sortNum": 30000,
-            "created": "2023-07-12T16:49:39.177Z",
-            "modified": "2023-07-12T16:52:23.386Z",
+            "created": "2023-07-17T17:32:01.702Z",
+            "modified": "2023-07-17T18:18:23.491Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -82,7 +82,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Test\"\n}",
+                "raw": "{\n  \"type_id\": 1,\n  \"name\": \"Test resource\",\n  \"method\": \"GET\",\n  \"endpoint\": \"https://www.stepy.dev\",\n  \"settings\": \"{\\\"name\\\": \\\"test\\\"}\"\n}",
                 "form": []
             },
             "auth": {
@@ -92,15 +92,15 @@
             "tests": []
         },
         {
-            "_id": "bb817936-295e-4b95-a51a-29bf823437b9",
-            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "_id": "5b4f37bf-5897-4c15-b316-dfdb4f02496d",
+            "colId": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
             "containerId": "",
-            "name": "Update project",
-            "url": "{{apiUrl}}/projects/21f0a605-4f34-4c91-a553-55c1526bac5a",
+            "name": "Update resource",
+            "url": "{{apiUrl}}/projects/100dbdc0-7405-3e41-8b03-6e6d72400046/resources/d9267a90-2c82-35f6-bfed-8e111d86ca97",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2023-07-12T17:03:44.911Z",
-            "modified": "2023-07-17T17:30:32.842Z",
+            "created": "2023-07-17T18:05:18.693Z",
+            "modified": "2023-07-17T18:19:11.901Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -114,7 +114,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Test1\"\n}",
+                "raw": "{\n  \"type_id\": 1,\n  \"name\": \"Test resource 3\",\n  \"method\": \"GET\",\n  \"endpoint\": \"https://www.stepy.dev\",\n  \"settings\": \"{\\\"name\\\": \\\"test\\\"}\"\n}",
                 "form": []
             },
             "auth": {
@@ -124,15 +124,15 @@
             "tests": []
         },
         {
-            "_id": "d04cecf9-5db8-4007-9b0d-c906d2dccfee",
-            "colId": "369b1a4c-0e47-46a2-8d83-c703221992a4",
+            "_id": "bc6d061b-c049-4c86-804d-0cf7cc787c0e",
+            "colId": "7577b80f-2a79-42f8-ad46-6ad10e5bbf81",
             "containerId": "",
-            "name": "Delete project",
-            "url": "{{apiUrl}}/projects/a7a0276f-2618-4e27-a7c6-5d514578aaa3",
+            "name": "Delete resource",
+            "url": "{{apiUrl}}/projects/100dbdc0-7405-3e41-8b03-6e6d72400046/resources/d9267a90-2c82-35f6-bfed-8e111d86ca97",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2023-07-12T17:13:32.321Z",
-            "modified": "2023-07-12T17:17:50.492Z",
+            "created": "2023-07-17T18:20:07.758Z",
+            "modified": "2023-07-17T18:20:41.452Z",
             "headers": [
                 {
                     "name": "Accept",

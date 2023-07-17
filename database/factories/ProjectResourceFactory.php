@@ -24,6 +24,8 @@ class ProjectResourceFactory extends Factory
                 ProjectResource::RESOURCE_TYPE_API,
             ]),
             'name' => fake()->domainName(),
+            'method' => 'GET',
+            'endpoint' => fake()->domainName(),
             'uptime' => fake()->randomFloat(2, 0, 100),
             'settings' => [],
             'checked_at' => fake()->dateTime(),
